@@ -1,7 +1,22 @@
-<owl-carousel [options]="mySlideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
-  <div class="item" *ngFor="let image of mySlideImages;let i = index">
-  <div>
-  <img src={{image}}/>
+<owl-carousel [options]="mySlideOptions" [items]="images_1" [carouselClasses]="['owl-theme', 'sliding']">
+  <div class="item" *ngFor="let image of mySlideImages; let i = index">
+    <div>
+      <img src={{image}} />
+    </div>
   </div>
-  </div>
-  </owl-carousel>
+</owl-carousel>
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <div>Some tags before</div>
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let image of this.images;">
+      <ng-template carouselSlide>
+        <img class="item" src="{{image.image}}">
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+  <div>Some tags after</div>
+</div>

@@ -1,0 +1,33 @@
+img.item {
+    height: 100%;
+    /* */
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    cursor: pointer;
+    &:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        -webkit-box-shadow: var(--m-shadow-3);
+        -moz-box-shadow: var(--m-shadow-3);
+        -ms-box-shadow: var(--m-shadow-3);
+        -o-box-shadow: var(--m-shadow-3);
+        box-shadow: var(--m-shadow-3);
+    }
+    &.active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        -webkit-box-shadow: var(--m-shadow-2);
+        -moz-box-shadow: var(--m-shadow-2);
+        -ms-box-shadow: var(--m-shadow-2);
+        -o-box-shadow: var(--m-shadow-2);
+        box-shadow: var(--m-shadow-2);
+    }
+}
