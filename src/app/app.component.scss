@@ -31,3 +31,17 @@ img.item {
         box-shadow: var(--m-shadow-2);
     }
 }
+
+.owl-prev, .owl-next {
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.prev, .next {
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}

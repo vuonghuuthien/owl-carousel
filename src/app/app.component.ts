@@ -53,7 +53,7 @@ export class AppComponent {
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: ["<img class='prev' src='/assets/images/chevron-left.svg'>", "<img class='next' src='/assets/images/chevron-right.svg'>"],
     responsive: {
       0: {
         items: 1
