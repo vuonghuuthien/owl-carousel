@@ -31,7 +31,26 @@ export class AppComponent {
     '../assets/images/demo_7.jpg'
   ];
 
-  mySlideOptions = { items: 4, dots: true, nav: true };
+  mySlideOptions = { 
+    items: 4, 
+    dots: true, 
+    nav: true,
+    navText: ["<img class='prev' src='/assets/images/chevron-left.svg'>", "<img class='next' src='/assets/images/chevron-right.svg'>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+  };
   myCarouselOptions = { items: 3, dots: true, nav: true };
 
   //
