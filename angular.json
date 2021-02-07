@@ -44,8 +44,7 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/owl.carousel/dist/owl.carousel.min.js",
-              "./node_modules/materialize-css/dist/js/materialize.js",
-              "../../../assets/materialize/js/materialize.min.js"
+              "./node_modules/materialize-css/dist/js/materialize.js"
             ]
           },
           "configurations": {
