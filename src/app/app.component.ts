@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+declare var M: any;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'owl-carousel';
   images_1: any;
 
@@ -90,4 +91,9 @@ export class AppComponent {
     nav: true
   }
 
+  options = {};
+  ngOnInit() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, this.options);
+  }
 }
