@@ -39,12 +39,18 @@
               "./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
+<<<<<<< .merge_file_a09584
               "src/assets/materialize/css/materialize-carousel.css"
+=======
+              "./node_modules/materialize-css/dist/css/materialize.css",
+              "/assets/jq-skywheel/jq-skywheel.css"
+>>>>>>> .merge_file_a09996
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/owl.carousel/dist/owl.carousel.min.js",
-              "./node_modules/materialize-css/dist/js/materialize.js"
+              "./node_modules/materialize-css/dist/js/materialize.js",
+              "/assets/jq-skywheel/jq-skywheel.js"
             ]
           },
           "configurations": {
