@@ -39,7 +39,7 @@
               "./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
-              "./node_modules/materialize-css/dist/css/materialize.css"
+              "src/assets/materialize/css/materialize-carousel.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",

@@ -91,7 +91,10 @@ export class AppComponent implements OnInit {
     nav: true
   }
 
-  options = {};
+  options = {
+    noWrap: true,
+    numVible: 5
+  };
   ngOnInit() {
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, this.options);
