@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 declare var M: any;
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -96,7 +97,16 @@ export class AppComponent implements OnInit {
     numVible: 5
   };
   ngOnInit() {
+    // Materilize
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, this.options);
+
+    // Sky-wheel
+    var sles = document.querySelectorAll('ran');
+    $('#ran').skywheel({
+      width:"200px",
+      height:"200px",
+      effect: 1,
+    });
   }
 }

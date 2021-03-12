@@ -92,3 +92,7 @@
 .jq_skywheel .chosen{
 	z-index: 1;
 }
+.jq_skywheel .inner>img {
+    height: 100%;
+    width: 100%;
+}
