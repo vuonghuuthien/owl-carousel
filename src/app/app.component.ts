@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 declare var M: any;
 declare var $: any;
@@ -8,7 +8,7 @@ declare var $: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'owl-carousel';
   images_1: any;
 
@@ -108,5 +108,14 @@ export class AppComponent implements OnInit {
       height:"200px",
       effect: 1,
     });
+  }
+
+  ngAfterViewInit() {
+    $('#ran_url').skywheel({
+      width:"200px",
+      height:"200px",
+      effect: 1,
+    });
+    $('#ran_url li:first-child').click();
   }
 }

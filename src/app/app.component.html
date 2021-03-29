@@ -40,3 +40,12 @@
     <li><img src="/assets/images/demo_6.jpg" /></li>
   </ul>
 </div>
+
+
+<div style="height: 800px; width: 100%;">
+  <ul id="ran_url">
+    <li *ngFor="let item of images; index as i">
+      <img [src]="item.image" />
+    </li>
+  </ul>
+</div>
