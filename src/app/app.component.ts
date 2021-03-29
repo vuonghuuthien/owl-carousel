@@ -108,6 +108,9 @@ export class AppComponent implements OnInit, AfterViewInit {
       height:"200px",
       effect: 1,
     });
+
+    this.checkImage("../assets/images/demo_0.jpg");
+    this.checkImage("/linkdmo1");
   }
 
   ngAfterViewInit() {
@@ -117,5 +120,18 @@ export class AppComponent implements OnInit, AfterViewInit {
       effect: 1,
     });
     $('#ran_url li:first-child').click();
+  }
+
+  checkImage(url: string) {
+    var image = new Image();
+    image.onload = function() {
+      if (image.width > 0) {
+        console.log("image exists");
+      }
+    }
+    image.onerror = function() {
+      console.log("image doesn't exist");
+    }
+    image.src = url;
   }
 }
